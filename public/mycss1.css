@@ -1,0 +1,38 @@
+body {
+    background-color: aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 70px;
+    margin-bottom: 100px;
+    margin-right: 50px;
+    margin-left: 100px;
+}
+
+#namareporter {
+    font-size: xx-small;
+    font-weight: bold;
+}
+
+.published {
+    text-align: center;
+    font-size: xx-small;
+}
+
+a:link,
+a:visited {
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+.indented {
+    margin-left: 50px;
+}
+
+.rounded-img {
+    border-radius: 18px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
