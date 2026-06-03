@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Bootstrap 4 Example</title>
+    <title>5026241107 Dedy Irama</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" />
@@ -13,12 +13,37 @@
 
 <body>
     <div class="container">
-        <h1>My First Bootstrap Page</h1>
-        <p>This is some text.</p>
-    </div>
-    <div class="container">
-        <h2>Heading 2</h2>
-        <p>This is some text.</p>
+        <div class="p-5 bg-primary text-white">
+            <h3>5026241107 Dedy Irama</h3>
+            <p>@yield('judul_halaman')</p>
+        </div>
+        <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+            <div class="container-fluid">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pegawai">Pegawai</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Nama Tabel PR</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Siswa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Latihan 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Latihan 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">EAS</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container mt-4">
+            @yield('konten')
+        </div>
     </div>
 </body>
 
