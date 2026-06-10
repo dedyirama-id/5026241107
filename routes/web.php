@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\PegawaiDBController;
 use App\Http\Controllers\BolpenDBController;
+use App\Http\Controllers\KeranjangBelanjaController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DosenController;
 use App\Http\Controllers\PegawaiController;
@@ -84,3 +85,8 @@ Route::post('/bolpen/update', [BolpenDBController::class, 'update']);
 Route::get('/bolpen/hapus/{id}', [BolpenDBController::class, 'hapus']);
 Route::get('/bolpen/cari', [BolpenDBController::class, 'cari']);
 
+// route crud keranjang belanja
+Route::get('/keranjangbelanja', [KeranjangBelanjaController::class, 'index']);
+Route::get('/keranjangbelanja/tambah', [KeranjangBelanjaController::class, 'tambah']);
+Route::post('/keranjangbelanja/store', [KeranjangBelanjaController::class, 'store']);
+Route::get('/keranjangbelanja/hapus/{id}', [KeranjangBelanjaController::class, 'hapus']);

@@ -24,16 +24,13 @@
                         <a class="nav-link" href="/pegawai">Pegawai</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/bolpen">Bolpen</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="#">Siswa</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Latihan 1</a>
+                        <a class="nav-link" href="/bolpen">Latihan 1</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Latihan 2</a>
+                        <a class="nav-link" href="/keranjangbelanja">Latihan 2</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">EAS</a>
