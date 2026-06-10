@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\PegawaiDBController;
+use App\Http\Controllers\BolpenDBController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DosenController;
 use App\Http\Controllers\PegawaiController;
@@ -73,4 +74,13 @@ Route::get('/pegawai/edit/{id}', [PegawaiDBController::class, 'edit']);
 Route::put('/pegawai/update', [PegawaiDBController::class, 'update']);
 Route::delete('/pegawai/hapus/{id}', [PegawaiDBController::class, 'destroy']);
 Route::get('/pegawai/cari', [PegawaiDBController::class, 'cari']);
+
+// route crud bolpen
+Route::get('/bolpen', [BolpenDBController::class, 'index']);
+Route::get('/bolpen/tambah', [BolpenDBController::class, 'tambah']);
+Route::post('/bolpen/store', [BolpenDBController::class, 'store']);
+Route::get('/bolpen/edit/{id}', [BolpenDBController::class, 'edit']);
+Route::post('/bolpen/update', [BolpenDBController::class, 'update']);
+Route::get('/bolpen/hapus/{id}', [BolpenDBController::class, 'hapus']);
+Route::get('/bolpen/cari', [BolpenDBController::class, 'cari']);
 
