@@ -20,10 +20,16 @@ class KeranjangBelanjaController extends Controller
 
     public function store(Request $request)
     {
+        $request->validate([
+            'KodeBarang' => 'required|integer',
+            'Jumlah' => 'required|integer',
+            'Harga' => 'required|integer',
+        ]);
+
         DB::table('keranjangbelanja')->insert([
-            'kodebarang' => $request->kodebarang,
-            'jumlah' => $request->jumlah,
-            'harga' => $request->harga
+            'KodeBarang' => $request->KodeBarang,
+            'Jumlah' => $request->Jumlah,
+            'Harga' => $request->Harga
         ]);
         return redirect('/keranjangbelanja');
     }
@@ -33,5 +39,5 @@ class KeranjangBelanjaController extends Controller
         DB::table('keranjangbelanja')->where('id', $id)->delete();
         return redirect('/keranjangbelanja');
     }
-    
+
 }

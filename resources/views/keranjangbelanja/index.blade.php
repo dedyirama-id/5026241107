@@ -15,15 +15,15 @@
             <th>Total</th>
             <th>Action</th>
         </tr>
-        @foreach ($keranjangbelanja as $b)
+        @foreach ($keranjangbelanja as $kb)
             <tr>
-                <td>{{ $b->id }}</td>
-                <td>{{ $b->kodebarang }}</td>
-                <td>{{ $b->jumlah }}</td>
-                <td>{{ number_format($b->harga, 0, ',', '.') }}</td>
-                <td>{{ number_format($b->harga, 0, ',', '.') }}</td>
+                <td>{{ $kb->ID }}</td>
+                <td>{{ $kb->KodeBarang }}</td>
+                <td>{{ $kb->Jumlah }}</td>
+                <td>{{ number_format($kb->Harga, 0, ',', '.') }}</td>
+                <td>{{ number_format($kb->Harga, 0, ',', '.') }}</td>
                 <td>
-                    <a href="/keranjangbelanja/hapus/{{ $b->id }}" class="btn btn-danger">Batal</a>
+                    <a href="/keranjangbelanja/hapus/{{ $kb->ID }}" class="btn btn-danger">Batal</a>
                 </td>
             </tr>
         @endforeach

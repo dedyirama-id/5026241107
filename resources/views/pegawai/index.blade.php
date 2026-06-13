@@ -2,8 +2,8 @@
 @section('judul_halaman', 'Data Pegawai')
 @section('konten')
     <form action="/pegawai/cari" method="GET" class="d-flex">
-        <input class="form-control w-25" type="text" name="cari" placeholder="Cari Pegawai .." value="{{ old('cari') }}">
-        <input class="btn btn-secondary" type="submit" value="CARI" >
+        <input class="form-control w-25" type="text" name="cari" placeholder="Cari Pegawai .." value="{{ request('cari') }}">
+        <input class="btn btn-secondary" type="submit" value="CARI">
     </form>
 
     <br />

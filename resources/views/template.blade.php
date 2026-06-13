@@ -9,6 +9,7 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body>
@@ -24,13 +25,16 @@
                         <a class="nav-link" href="/pegawai">Pegawai</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Siswa</a>
+                        <a class="nav-link" href="/bolpen">Bolpen</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/bolpen">Latihan 1</a>
+                        <a class="nav-link" href="/siswa">Siswa</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/keranjangbelanja">Latihan 2</a>
+                        <a class="nav-link" href="/keranjangbelanja">Latihan 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/nilaikuliah">Latihan 2</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">EAS</a>
